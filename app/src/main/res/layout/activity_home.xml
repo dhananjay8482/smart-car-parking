@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Home">
+<!--    <ImageView-->
+<!--        android:id="@+id/logo_id"-->
+<!--        android:background="#020202"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:src="@mipmap/aplogo_foreground"/>-->
+
+    <ImageView
+        android:id="@+id/logo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/dypcet2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DYPCET PARK"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

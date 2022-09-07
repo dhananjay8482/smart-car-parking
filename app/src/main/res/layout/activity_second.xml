@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/image_view1"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@android:drawable/ic_menu_camera"></ImageView>
+
+    <TextView
+        android:id="@+id/text_display1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view1"
+        android:maxLines="3"
+        android:hint="Detected Number"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/capture_image1"
+        app:layout_constraintTop_toBottomOf="@+id/image_view1"
+        app:layout_constraintVertical_bias="0.376"
+        tools:layout_editor_absoluteX="0dp"></TextView>
+
+    <Button
+        android:id="@+id/capture_image1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/mybutton"
+        android:layout_above="@id/detect_text_image_btn1"
+        android:text="Capture Image"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/detect_text_image_btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/detect_text_image_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_above="@id/proceed1"
+        android:layout_margin="5dp"
+        android:background="@drawable/mybutton"
+        android:text="Detect Text"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/proceed1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/proceed1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/mybutton"
+        android:text="Proceed"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/home2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit Point"
+        android:gravity="center"
+
+        android:textSize="26dp"
+        android:textColor="@color/black"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="131dp" />
+
+    <Button
+        android:id="@+id/home2"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/mybutton"
+        android:text="Home"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
